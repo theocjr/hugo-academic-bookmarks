@@ -1,0 +1,31 @@
+{{- define "main" -}}
+
+<article class="article">
+
+  {{ partial "page_header" . }}
+
+  <div class="article-container">
+
+    <div class="article-style">
+        <a href="/bookmarks">Back to Tags</a>
+        <ol>
+            {{ $tag_dict := index $.Site.Data.bookmarks_by_tags (string $.Params.name) }}
+            {{ range $tag_dict.bookmarks }}
+                <li>
+                    <a href="{{.url}}" target="_blank" rel="nofollow">{{ .name }}</a>
+                    <p/>
+                    {{ range .tags }}
+                        {{ $safe_name := index $.Site.Data.bookmarks_by_tags . "safe_name" }}
+                        <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/bookmarks/tags/{{ $safe_name }}">{{ . }}</a>
+                    {{ end }}
+                </li>
+            {{ end }}
+        </ol>
+    </div>
+
+    {{ partial "page_footer" . }}
+
+  </div>
+</article>
+
+{{- end -}}

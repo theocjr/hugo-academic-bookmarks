@@ -1,0 +1,9 @@
+---
+- name: 'Academic Hugo Theme'
+  url: 'https://sourcethemes.com/academic/'
+  tags: [ 'website', 'theme', 'hugo' ]
+
+#- name: ''
+#  url: ''
+#  tags: [ '' ]
+

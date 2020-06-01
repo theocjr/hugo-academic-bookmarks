@@ -1,0 +1,23 @@
+{{- define "main" -}}
+
+<article class="article">
+
+  {{ partial "page_header" . }}
+
+  <div class="article-container">
+
+    <div class="article-style">
+        <h2>Tags</h2>
+        {{ range $.Site.Data.bookmarks_by_tags }}
+            <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/bookmarks/tags/{{ .safe_name }}">{{ .name }}</a>
+        {{ end }}
+    </div>
+
+    {{ partial "page_footer" . }}
+
+  </div>
+</article>
+
+{{- end -}}
+
+
