@@ -8,7 +8,4 @@ Bookmarks content section for the Academic theme (Hugo framework).
 1. Edit the file `data/bookmarks.yaml` filling with your bookmarks
 1. Run the code below **before** the static content generation:
 
-`./generate_bookmarks_data.py \`
-`    --bookmarks_filename data/bookmarks.yaml \`
-`    --bookmarks_by_tags_filename data/bookmarks_by_tags.json \`
-`    --tags_directory content/bookmarks/tags/`
+./generate_bookmarks_data.py --bookmarks_filename data/bookmarks.yaml --bookmarks_by_tags_filename data/bookmarks_by_tags.json --tags_directory content/bookmarks/tags/`
