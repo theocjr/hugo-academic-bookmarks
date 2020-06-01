@@ -2,8 +2,9 @@
 
 
 """
-Auxiliar code used to generate JSON file from YAML file to be consumed by Go
-templates. Run this code before the static content generation by hugo binary.
+Auxiliar code used to generate auxiliar files from a bookmarks YAML file to be
+consumed by Go templates. Run this code before the static content generation by
+hugo binary.
 
 Run instructions:
     ./generate_bookmarks_data.py \
