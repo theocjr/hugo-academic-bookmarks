@@ -2,8 +2,10 @@
 - name: 'Academic Hugo Theme'
   url: 'https://sourcethemes.com/academic/'
   tags: [ 'website', 'theme', 'hugo' ]
+  comment: 'The comment field is optional'
 
 #- name: ''
 #  url: ''
 #  tags: [ '' ]
+#  comment: ''
 

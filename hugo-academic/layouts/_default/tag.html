@@ -13,6 +13,10 @@
             {{ range $tag_dict.bookmarks }}
                 <li>
                     <a href="{{.url}}" target="_blank" rel="nofollow">{{ .name }}</a>
+                    {{ if .comment }}
+                        <br/>
+                        <span class="article-metadata"> {{ .comment }}</span>
+                    {{ end }}
                     <p/>
                     {{ range .tags }}
                         {{ $safe_name := index $.Site.Data.bookmarks_by_tags . "safe_name" }}
